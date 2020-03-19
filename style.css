@@ -1,0 +1,464 @@
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font:15px/1.5 Arial, Helvetica,sans-serif;
+}
+
+
+/* Global */
+.container{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#4393d1;
+  border:0;
+  border-width:medium;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.button_2{
+  display: inline-block;
+  color:navy;
+  font-weight:bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: navy 1px solid;
+  border-width:medium;
+  margin-top:20px;
+  margin-left:0;
+}
+
+.button_2:hover{
+  color:red;
+  font-weight:bold;
+}
+
+.button_2:hover.border{
+  color:red;
+}
+
+.button_3{
+  display: inline-block;
+  color:white;
+  font-weight:bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: white 1px solid;
+  margin-top:20px;
+  margin-left:0;
+}
+
+.button {
+  display: inline-block;
+  color:white;
+  font-weight:bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: #f44336 1px solid;
+  border-width:medium;
+  margin-top:20px;
+  margin-left:0;
+  animation-name:button;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+@keyframes button {
+  0%   {opacity:0}
+  100% {opacity: 1}
+}
+
+.button2 {
+  display: inline-block;
+  color:white;
+  font-weight:bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: #f44336 1px solid;
+  border-width:medium;
+  margin-top:20px;
+  margin-right:15px;
+  animation-name:button2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.button2:hover {
+  transform: rotateY(360deg);
+}
+
+@keyframes button2 {
+  0%   {opacity:0}
+  100% {opacity: 1}
+}
+
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* INDEX - header,showcase,about,contact*/
+
+
+/* Header */
+header{
+  background:#fcfcfc;
+  color:#000000;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom:#4393d1 2px solid;
+}
+
+header a{
+  color:#4393d1;
+  text-decoration:bold;
+  text-transform: uppercase;
+  font-size:16px;
+  font-weight:bold;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+  font-size:50px;
+}
+
+header nav{
+  float:right;
+  margin-top:24px;
+}
+
+header .highlight, header .current a{
+  color:red;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:red;
+  font-weight:bold;
+}
+
+
+/* Showcase */
+#showcase{
+  min-height:650px;
+  text-align:left;
+  color:#ffffff;
+  background:#282828;
+  background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+       background-position: 0% 50%
+    }
+    50% {
+       background-position: 100% 50%
+    }
+    100%{
+       background-position: 0% 50%
+    }
+}
+
+#showcase h1{
+  margin-top:200px;
+  margin-bottom:20px;
+  font-size:40px;
+  font-weight:bold;
+}
+
+#showcase p{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+
+/* about */
+#about{
+  min-height:500px;
+  text-align:center;
+}
+
+#about h1{
+  font-size:35px;
+  font-weight:bold;
+  margin-top:120px;
+  margin-bottom:10px;
+  color:#ee7752;
+}
+
+#about p{
+  font-size:20px;
+  font-weight:bold;
+  color:navy;
+}
+
+
+/* contact */
+#contact{
+  min-height:500px;
+  background:navy;
+  text-align:center;
+}
+
+#contact h1{
+  font-size:40px;
+  font-weight:bold;
+  margin-top:140px;
+  margin-bottom:10px;
+  color:red;
+}
+
+#contact p{
+  font-size:20px;
+  font-weight:bold;
+  color:white;
+}
+
+
+
+
+/* Portfolio - boxes etc....*/ 
+/* Boxes */
+
+#box h1{
+  font-size:40px;
+  font-weight:bold;
+  margin-top:90px;
+  margin-bottom:20px;
+}
+
+#box img{
+  width:90%;
+  margin-top:90px;
+  margin-bottom:100px;
+  margin-left:60px;
+}
+
+#box .box-right{
+  margin-top:200px;
+  margin-bottom:200px;
+}
+
+
+
+
+#boxes h1{
+  font-size:40px;
+  font-weight:bold;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+
+#boxes img{
+  width:90%;
+  margin-left:60px;
+}
+
+#boxes .boxes-right{
+  margin-top:150px;
+}
+
+
+/* About - main etc...*/
+#main{
+  min-height:700px;
+  text-align:center;
+  background:navy;
+}
+
+#main h1{
+  font-size:40px;
+  margin-top:140px;
+  margin-bottom:30px;
+  text-align:right;
+  font-weight:bold;
+  color:white;
+}
+
+#main p{
+  font-size:20px;
+  text-align:right;
+  font-weight:bold;
+  color:white;
+  margin-bottom:30px;
+}
+
+
+
+
+
+/* Contact - who etc... */
+#who{
+  min-height:700px;
+  color:#fff;
+  float:center;
+  background:#282828;
+  background:linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+       background-position: 0% 50%
+    }
+    50% {
+       background-position: 100% 50%
+    }
+    100%{
+       background-position: 0% 50%
+    }
+}
+
+#who h1{
+  font-size:40px;
+  margin-top:90px;
+  margin-bottom:10px;
+  text-align:left;
+  color:white;
+  font-weight:bold;
+}
+
+#who p{
+  font-size:20px;
+  text-align:left;
+  font-weight:bold;
+  color:white;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+#who h2{
+  text-align:right;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.fa {
+  padding:20px;
+  width:50px;
+  float:right;
+  text-align:center;
+  text-decoration:none;
+  margin-top:10px;
+  margin-right:5px;
+}
+
+.fa h2{
+  text-align:right;
+  font-size:8px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  font-size:40px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  font-size:40px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  font-size:40px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  font-size:40px;
+}
+
+
+
+
+
+.footer{
+  position:relative;
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  padding-top:20px; 
+  padding-bottom:10px;
+  background-color: white;
+  color: navy;
+  text-align:left;
+  font-size:16px;
+  font-weight:bold;
+}
+    
+
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase{
+    margin:auto;
+  }  
+  
+  #showcase h1{
+    margin-top:20px;
+  }
+
+  footer{
+    text-align:center;
+  }
+}
